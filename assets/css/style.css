@@ -4,18 +4,16 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    
 }
 
 .calculator {
     display: flex;
     flex-direction: column;
     border: 10px solid rgba(108, 21, 163, 0.873);
-    width: 30%;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color:antiquewhite;
+    background-color: antiquewhite;
 }
 
 .heading {
@@ -26,7 +24,7 @@ body {
 }
 
 input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -55,4 +53,16 @@ button:hover {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        width: 100%;
+    }
 }
